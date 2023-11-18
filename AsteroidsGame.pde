@@ -1,22 +1,22 @@
 Spaceship bob;
 star[]nightSky=new star[200];
-public void setup() 
-{
+void setup(){
   size(800,800);
 for (int i=0; i<nightSky.length; i++){
 nightSky[i]= new star();
 }
 bob=new Spaceship();
 }
-public void draw() 
+void draw()
 {
-background(0);
+ background(0);
  for (int i=0; i<nightSky.length; i++)
   {
   nightSky[i].show();
   }
  bob.move();
  bob.show();
+//prints two circles close to each other? smth with bob.show?
 }
 void keyPressed(){
 if (key=='w'||key=='W'){
@@ -32,4 +32,3 @@ else if (key=='d'||key=='D'){
   bob.zoom();
   }
 }
-
