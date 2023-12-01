@@ -1,11 +1,16 @@
 Spaceship bob;
+Asteroid joe;
 star[]nightSky=new star[200];
+ArrayList <Asteroid> joes= new ArrayList <Asteroid>();
 void setup(){
   size(800,800);
 for (int i=0; i<nightSky.length; i++){
 nightSky[i]= new star();
 }
 bob=new Spaceship();
+joe= new Asteroid();
+for (int i=0; i<11; i++)
+joes.add(joe);
 }
 void draw()
 {
@@ -16,7 +21,10 @@ void draw()
   }
  bob.move();
  bob.show();
-//prints two circles close to each other? smth with bob.show?
+ for (int i=0; i<joes.size(); i++){
+ joes.get(i).move();
+ joes.get(i).show();
+}
 }
 void keyPressed(){
 if (key=='w'||key=='W'){
@@ -32,4 +40,3 @@ else if (key=='d'||key=='D'){
   bob.zoom();
   }
 }
-
