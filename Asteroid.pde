@@ -35,7 +35,7 @@ return myCenterX;
 public void getY(){
 return myCenterY;
 }
-public void setX(x){
+public void setX(int x){
 myCenterX=x;
 }
 public void setY(y){
