@@ -22,6 +22,7 @@ void draw()
  bob.move();
  bob.show();
  for (int i=0; i<joes.size(); i++){
+ joes.get(i).
  joes.get(i).move();
  joes.get(i).show();
 }
