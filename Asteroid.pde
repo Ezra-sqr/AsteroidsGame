@@ -29,16 +29,16 @@ public void move(){
 turn(rotSpeed);
 super.move();
 }
-public void getX(){
+public double getX(){
 return myCenterX;
 }
-public void getY(){
+public double getY(){
 return myCenterY;
 }
 public void setX(int x){
 myCenterX=x;
 }
-public void setY(y){
+public void setY(int y){
 myCenterY=y;
 }
 }
