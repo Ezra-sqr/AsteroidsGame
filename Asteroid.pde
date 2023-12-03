@@ -35,4 +35,10 @@ return myCenterX;
 public void getY(){
 return myCenterY;
 }
+public void setX(x){
+myCenterX=x;
+}
+public void setY(y){
+myCenterY=y;
+}
 }
