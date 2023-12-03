@@ -22,8 +22,8 @@ void draw()
  bob.move();
  bob.show();
  for (int i=0; i<joes.size(); i++){
- joes.get(i).setX(Math.random()*700+50);
- joes.get(i).setY(Math.random()*700+50);
+ joes.get(i).setX((int)(Math.random()*700+50));
+ joes.get(i).setY((int)(Math.random()*700+50));
  joes.get(i).turn(math.random*360);
  joes.get(i).move();
  joes.get(i).show();
