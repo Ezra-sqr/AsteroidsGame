@@ -9,8 +9,12 @@ nightSky[i]= new star();
 }
 bob=new Spaceship();
 joe= new Asteroid();
-for (int i=0; i<11; i++)
+for (int i=0; i<11; i++){
 joes.add(joe);
+joes.get(i).setX((int)(Math.random()*700+50));
+joes.get(i).setY((int)(Math.random()*700+50)); 
+joes.get(i).turn(Math.random()*360);
+}
 }
 void draw()
 {
@@ -22,9 +26,6 @@ void draw()
  bob.move();
  bob.show();
  for (int i=0; i<joes.size(); i++){
- joes.get(i).setX((int)(Math.random()*700+50));
- joes.get(i).setY((int)(Math.random()*700+50));
- joes.get(i).turn(Math.random()*360);
  joes.get(i).move();
  joes.get(i).show();
 }
