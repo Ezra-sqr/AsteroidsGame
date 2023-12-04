@@ -14,7 +14,7 @@ joes.add(joe);
 joes.get(i).setX((int)(Math.random()*700+50));
 joes.get(i).setY((int)(Math.random()*700+50)); 
 joes.get(i).turn(Math.random()*360);
-joes.get(i).accelerate(0.6);
+joes.get(i).accelerate(0.2);
 }
 }
 void draw()
