@@ -41,4 +41,7 @@ myCenterX=x;
 public void setY(int y){
 myCenterY=y;
 }
+public void setRot(int z){
+rotSpeed=z;
+}
 }
