@@ -31,7 +31,7 @@ void draw()
  joes.get(i).move();
  joes.get(i).show();
  float d= dist((float)bob.getX(),(float)bob.getY(),(float)joes.get(i).getX(),(float)joes.get(i).getY());
- if (d<10){
+ if (d<20){
 joes.remove(i);
 }
 }
