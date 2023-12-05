@@ -34,4 +34,10 @@ myXspeed=0;
   myCenterY=Math.random()*700+50;
   myPointDirection=Math.random()*360;
 }
+public double getX(){
+return myCenterX;
+}
+public double getY(){
+return myCenterY;
+}
 }
