@@ -30,6 +30,10 @@ void draw()
  for (int i=0; i<joes.size(); i++){
  joes.get(i).move();
  joes.get(i).show();
+ float d= dist((float)bob.getX(),(float)bob.getY(),(float)joes.get(i).getX(),(float)joes.get(i).getY());
+ if (d<10){
+joes.remove(i);
+}
 }
 }
 void keyPressed(){
