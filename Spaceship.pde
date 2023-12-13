@@ -49,4 +49,10 @@ return myYspeed;
 public double getDirection(){
 return myPointDirection;
 }
+public void setSpeedX(double x){
+myXspeed=x;
+}
+public void setSpeedY(double y){
+myYspeed=y;
+}
 }
