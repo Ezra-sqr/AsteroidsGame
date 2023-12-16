@@ -38,23 +38,25 @@ void draw()
  if (p<20){
 joes.remove(i);
 i--;
+fill(205,0,0);
+rect(0,0,800,800);
 }
 }
 for(int i=0; i<Larrys.size();i++){
 Larrys.get(i).move();
 Larrys.get(i).show();
+if (Larrys.get(i).getX()<1||Larrys.get(i).getY()<1||Larrys.get(i).getX()>799||Larrys.get(i).getY()>799){
+  Larrys.remove(i);
+  break;
+}
  for (int k=0; k<joes.size(); k++){
    float d= dist((float)Larrys.get(i).getX(),(float)Larrys.get(i).getY(),(float)joes.get(k).getX(),(float)joes.get(k).getY());
   if (d<20){
 joes.remove(k);
+Larrys.remove(i);
 break;
 }
-if (d<20||Larrys.get(i).getX()<1||Larrys.get(i).getY()<1||Larrys.get(i).getX()>799||Larrys.get(i).getY()>799){
-  Larrys.remove(i);
-  break;
-}
  }
-
 }
 }
 void keyPressed(){
@@ -68,8 +70,8 @@ else if (key=='d'||key=='D'){
   bob.turn(10); 
   }
 else if (key=='s'||key=='S'){
-  bob.setSpeedX(bob.getSpeedX()*0.9);
-   bob.setSpeedY(bob.getSpeedY()*0.9);
+  bob.setSpeedX(bob.getSpeedX()*0.7);
+   bob.setSpeedY(bob.getSpeedY()*0.7);
 }
 else if (key=='k'||key=='K'){
 bob.zoom();
