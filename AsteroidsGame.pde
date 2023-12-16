@@ -10,7 +10,7 @@ for (int i=0; i<nightSky.length; i++){
 nightSky[i]= new star();
 }
 bob=new Spaceship();
-for (int i=0; i<11; i++){
+for (int i=0; i<16; i++){
 joe= new Asteroid();
 joes.add(joe);
 joes.get(i).setX((int)(Math.random()*700+50));
