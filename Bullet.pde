@@ -5,7 +5,7 @@ corners=3;
    xCorners= new int[corners];   
    yCorners=new int [corners];
     yCorners[0]=0;
-   xCorners[0]=5;
+   xCorners[0]=7;
    yCorners[1]=2;
    xCorners[1]=-2;
    yCorners[2]=-2;
@@ -16,7 +16,7 @@ corners=3;
   myXspeed=bob.getSpeedX();
   myYspeed=bob.getSpeedY();    
   myPointDirection=bob.getDirection();
-  accelerate(2);
+  accelerate(25);
 }
 public double getX(){
 return myCenterX;
