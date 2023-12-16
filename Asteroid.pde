@@ -1,7 +1,7 @@
 class Asteroid extends Floater
 {
-double rotSpeed;
-Asteroid(){
+private double rotSpeed;
+public Asteroid(){
 corners=6;
    xCorners= new int[corners];   
    yCorners=new int [corners];
